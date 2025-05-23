@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>IP KillSwitch</title>
+</head>
+<body>
+    <div class="container">
+        <h1>IP KillSwitch</h1>
+        
+        <!-- ON/OFF 스위치 - 위치 이동됨 -->
+        <div class="toggle-section">
+            <div class="toggle-container">
+                <span>IP KillSwitch is currently</span>
+                <label class="switch">
+                    <input type="checkbox" id="extension-toggle" checked>
+                    <span class="slider round"></span>
+                </label>
+                <span id="extension-status" class="active">ON</span>
+            </div>
+            <div id="disable-message" style="display: none;">
+                <p>Will be disabled for 1 hour. To disable completely, <a href="#" id="disable-permanently">click here</a>.</p>
+            </div>
+        </div>
+        
+        <!-- 현재 IP 정보 -->
+        <div class="section">
+            <h2>Current IP</h2>
+            <div class="form-group">
+                <div class="ip-info">
+                    <span id="current-ip">Loading...</span>
+                    <span id="ip-status" class="status">Checking...</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <button id="check-ip" class="btn">Refresh IP</button>
+            </div>
+        </div>
+        
+        <!-- Hidden IP 관리 -->
+        <div class="section">
+            <h2>Hidden IPs</h2>
+            <div class="form-group">
+                <input type="text" id="new-ip" placeholder="Enter IP address...">
+                <button id="add-ip" class="btn btn-secondary">Add IP</button>
+            </div>
+            <div class="form-group">
+                <button id="add-current-ip" class="btn">Add Current IP</button>
+            </div>
+            <ul id="ip-list" class="list"></ul>
+        </div>
+        
+        <!-- 차단 사이트 관리 -->
+        <div class="section">
+            <h2>Blocked Sites</h2>
+            <div class="form-group">
+                <input type="text" id="new-site" placeholder="Enter domain (e.g. example.com)...">
+                <button id="add-site" class="btn btn-secondary">Add Site</button>
+            </div>
+            <div class="form-group">
+                <button id="add-current-site" class="btn">Add Current Site</button>
+            </div>
+            <ul id="site-list" class="list"></ul>
+        </div>
+        
+        <div class="section info">
+            <p>Sites will be blocked when accessed from hidden IPs.</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
