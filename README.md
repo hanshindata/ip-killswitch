@@ -13,7 +13,11 @@ IP KillSwitch is a Chrome extension designed to automatically protect your priva
 - **Visual Status Indicators**: Clear visual feedback about your protection status
 
 ## 🖼️ Screenshots
+
+### Main Interface
 ![Main Interface](screenshots/main_interface.png)
+
+### Website Blocking
 ![Website Blocking](screenshots/website_blocking.png)
 
 ## 🛠️ Technology Stack
@@ -25,8 +29,8 @@ IP KillSwitch is a Chrome extension designed to automatically protect your priva
 
 ## 🚀 Installation
 
-### From Chrome Web Store
-1. Visit the [IP KillSwitch page](https://chrome.google.com/webstore/detail/ip-killswitch/your-extension-id) on Chrome Web Store
+### From Chrome Web Store (Coming Soon)
+1. Visit the IP KillSwitch page on Chrome Web Store
 2. Click "Add to Chrome" to install the extension
 3. The IP KillSwitch icon will appear in your Chrome toolbar
 
