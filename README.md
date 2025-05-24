@@ -21,10 +21,10 @@ IP KillSwitch is a Chrome extension designed to automatically protect your priva
 ![Website Blocking](screenshots/website_blocking.png)
 
 ## 🛠️ Technology Stack
-- **Chrome Extension API**: Core extension functionality
-- **Chrome Declarative Net Request API**: Website blocking without requiring broad permissions
 - **JavaScript (ES6+)**: Extension logic and user interface
 - **HTML5 & CSS3**: User interface structure and styling
+- **Chrome Extension API**: Core extension functionality
+- **Chrome Declarative Net Request API**: Website blocking without requiring broad permissions
 - **Chrome Storage API**: Secure storage of user settings
 
 ## 🚀 Installation
